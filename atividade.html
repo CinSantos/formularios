@@ -1,0 +1,57 @@
+m<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="utf-8">
+        <title>Formulário</title> 
+        <style> ul{top: 2px; position:absolute; width:50%;display:flex; list-style: none; justify-content:space-between} 
+        p {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS'} 
+         </style> 
+             
+</head>
+<body>
+<main>
+    <ul>
+        <li> <a href= "index.html"target="blank"> Página inicial </a></li>
+        <li> <a href= "atividade.html" target="blank"> Atividade de Formulário </a></li>
+        <li> <a href= "atividade2.html" target="blank"> Atividade de Formulário 2</a></li>
+      </ul>
+</main>
+<br><br>
+      <form style="border-style:solid; width:50%">
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="nasc">Data de nascimento:</label>
+            <input type="date" id="nasc" name="nasc"><br>
+            <p>Sexo:
+            <input type="radio" id="imasc" name="fav_language" value="sexo">
+            <label for="masc">Masc</label>
+            <input type="radio" id="iFem" name="fav_language" value="sexo">
+            <label for="fem">Fem</label>
+            <input type="radio" id="inaoinforma" name="fav_language" value="sexo">
+            <label for="naoinforma">Prefiro não informar</label><br></p>
+            <p>Endereço</p>
+            <label for="logra">Logradouro:</label>
+            <input type="text" id="logra" name="logra"><br>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro"><br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade"><br>
+            <label for="uf">UF</label>
+            <select name="estado" id="estado">
+                <option value="df">DF</option>
+                <option value="df">SP</option>
+                <option value="df">RJ</option>
+                <option value="df">RS</option>
+            </select>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"> <br>
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="reset" value="Limpar">
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="submit" value="Enviar">
+            </form>
+        </div>
+</section>
+</body>
+</html>

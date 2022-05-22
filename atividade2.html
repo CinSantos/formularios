@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="utf-8">
+        <title>Formulário 2</title> 
+        <style> ul{top: 2px; position:absolute; width:50%;display:flex; list-style: none; justify-content:space-between} 
+        p {font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS'} 
+        </style> 
+             
+</head>
+<body>
+<main>
+    <ul>
+        <li> <a href= "index.html"target="blank"> Página inicial </a></li>
+        <li> <a href= "atividade.html" target="blank"> Atividade de Formulário 1 </a></li>
+        <li> <a href= "atividade2.html" target="blank"> Atividade de Formulário 2</a></li>
+      </ul>
+</main>
+<br><br>
+      <form style="border-style:solid; width:50%">
+        <fieldset id="pessoais">
+            <legend> Dados pessoais </legend>
+            <label for="fname">Nome:</label>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="nasc">Data de nascimento:</label>
+            <input type="date" id="nasc" name="nasc"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"> <br>
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"
+            required> <small>Formato: 1234-567-890</small>
+          </fieldset>
+          <fieldset id="academico">
+                <legend> Dados acadêmicos </legend>
+                <label for="curso">Curso:</label>
+                <select name="ncurso" id="icurso">
+                  <option value="ADS">ADS</option>
+                  <option value="GTI">GTI</option>
+                  <option value="STI">STI</option>
+                  <option value="BDD">BDD</option>
+                </select> </BR>
+               <p> <label for="semestre">Semestre:</label>
+                <label for="semestre">1°</label>
+                <input type="radio" id="semestre" name="nsemestre" value="semestre">
+                <label for="semestre">2°</label>
+                <input type="radio" id="semestre" name="nsemestre" value="semestre">
+                <label for="semestre">3°</label>
+                <input type="radio" id="semestre" name="nsemestre" value="semestre">
+                <label for="semestre">4°</label>
+                <input type="radio" id="semestre" name="nsemestre" value="semestre">
+                <label for="semestre">5°</label>
+                <input type="radio" id="semestre" name="nsemestre" value="semestre"> </p>
+          </fieldset>
+                <fieldset id="profissional">
+                  <label for="trabalha">Trabalha?</label>
+                  <input type="checkbox" id="trabalha" name="ntrabalha"><br>
+                  <label for="local">Local de trabalho:</label>
+                  <input type="text" id="local" name="nlocal"><br>
+                  <label for="experiencia">Descreva sua experiência:</label> <br>
+                  <textarea id="experiencia" name="nexperiencia" rows="5" cols="80"> </textarea>
+         </fieldset>
+                          
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="reset" value="Gravar">
+            <input type="hidden" id="custId" name="custId" value="3487">
+            <input type="submit" value="Limpar">
+            </form>
+        </div>
+</section>
+</body>
+</html>
